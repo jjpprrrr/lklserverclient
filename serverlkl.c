@@ -67,7 +67,7 @@ int main(int argc, char** argv)
 
     if (nd_ifindex >= 0) {
         unsigned int addr = inet_addr("10.0.0.2"); // old 192.168.70.99
-        int nmlen = atoi("22");
+        int nmlen = atoi("24");
 
         if (addr != INADDR_NONE && nmlen > 0 && nmlen < 32) {
             ret = lkl_if_set_ipv4(nd_ifindex, addr, nmlen);
